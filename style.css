@@ -1,5 +1,5 @@
 .homeHome {
-  height: 50vw;
+  height: 800px;
   width: 100%;
   background-image: url(./img/france.png);
   background-repeat: no-repeat;
@@ -32,54 +32,156 @@
 
 
 @media screen and (max-width:1300px) {
-  .homeHome{
+  .homeHome {
     height: 700px;
   }
-.homeTitle{
-  font-size: 10vw;
-}
+
+  .homeTitle {
+    font-size: 10vw;
+  }
 
   .homeDescription {
-        font-size: 30px;
-        padding-bottom: 1em;
-      }
+    font-size: 30px;
+    padding-bottom: 1em;
+  }
 
-    }
+}
+
+.embership {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.membership_subtitle {
+  font-size: 5em;
+  color: #666666;
+  text-shadow: 8px 4px 8px #666666a6;
+  font-family: 'Aref Raruqaa', serif;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: .5em;
+  margin-top: .5em;
+}
+
+.membership_line {
+  margin-top: 4em;
+  width: 4%;
+  background-color: #B98F46;
+  border: 1.5px solid #B98F46;
+}
+
+.membership_img {
+  margin-left: 45px;
+  width: 95%;
+  border-radius: 40px;
+  box-shadow: 0px 30px 30px grey;
+}
+
+.membership_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  margin-left: 7em;
+  margin-right: 7em;
+  background-color: #295185;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Aref Ruqaa', serif;
+  transition: all 0.5s;
+  padding: 20px 15px 30px 15px;
+  cursor: pointer;
+  letter-spacing: .5rem;
+}
+
+.membership_button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.membership_button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.membership_button:hover {
+  background-color: #27446b;
+}
+
+.membership_button:hover span {
+  padding-right: 25px;
+}
+
+.membership_button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media screen and (max-width:1200px) {
+
+  .membership_button {
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    border-radius: 10px;
+    font-size: 5vw;
+    letter-spacing: .2rem;
+  }
+
+}
+
+@media screen and (max-width:700px) {
+  .membership_subtitle {
+    font-size: 10vw;
+  }
+}
 
 
-    @media screen and (max-width:600px) {
-    .homeHome{
+@media screen and (max-width:600px) {
+  .homeHome {
     height: 400px;
 
-    }
-        .homeTitle{
-          padding-top: 70px;
-          font-size: 30px;
-        }
-    
-      .homeDescription {
-            padding-top: 4%;
-            font-size: 15px;
-            padding-bottom: 1em;
-          }
-    
-        }
-    
+  }
 
-        @media screen and (max-width:300px) {
-          .homeHome{
-          height: 300px;
-      
-          }
-              .homeTitle{
-                padding-top: 20px;
-                font-size: 20px;
-              }
-          
-            .homeDescription {
-                  padding-top: 4%;
-                  font-size: 11px;
-                  padding-bottom: 1em;
-                }
-          
-              }
+  .homeTitle {
+    padding-top: 70px;
+    font-size: 30px;
+  }
+
+  .homeDescription {
+    padding-top: 4%;
+    font-size: 15px;
+    padding-bottom: 1em;
+  }
+
+}
+
+
+@media screen and (max-width:300px) {
+  .homeHome {
+    height: 300px;
+
+  }
+
+  .homeTitle {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+
+  .homeDescription {
+    padding-top: 4%;
+    font-size: 11px;
+    padding-bottom: 1em;
+  }
+
+}
