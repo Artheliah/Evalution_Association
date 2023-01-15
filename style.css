@@ -1,0 +1,85 @@
+.homeHome {
+  height: 50vw;
+  width: 100%;
+  background-image: url(./img/france.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 15px 30px #666666;
+}
+
+.homeDescription {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  font-size: 30px;
+  color: white;
+  padding-left: 15%;
+  padding-right: 15%;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.homeTitle {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  font-size: 6em;
+  color: #F6BE5D;
+  text-shadow: 5px 2px rgba(0, 0, 0, 0.541);
+}
+
+
+
+@media screen and (max-width:1300px) {
+  .homeHome{
+    height: 700px;
+  }
+.homeTitle{
+  font-size: 10vw;
+}
+
+  .homeDescription {
+        font-size: 30px;
+        padding-bottom: 1em;
+      }
+
+    }
+
+
+    @media screen and (max-width:600px) {
+    .homeHome{
+    height: 400px;
+
+    }
+        .homeTitle{
+          padding-top: 70px;
+          font-size: 30px;
+        }
+    
+      .homeDescription {
+            padding-top: 4%;
+            font-size: 15px;
+            padding-bottom: 1em;
+          }
+    
+        }
+    
+
+        @media screen and (max-width:300px) {
+          .homeHome{
+          height: 300px;
+      
+          }
+              .homeTitle{
+                padding-top: 20px;
+                font-size: 20px;
+              }
+          
+            .homeDescription {
+                  padding-top: 4%;
+                  font-size: 11px;
+                  padding-bottom: 1em;
+                }
+          
+              }
