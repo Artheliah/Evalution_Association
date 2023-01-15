@@ -6,10 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link href="styleMenu.css" rel="stylesheet">
     <title>Association</title>
 </head>
 
 <body>
+    <div class="menu">
+        <nav>
+
+            <div class="navbar" role="navigation">
+
+                <div class="navbar__logo">LES HERITIERS</div>
+                <ul class="navbar__links">
+                    <li class="navbar__link one"><a class="navbar_a" href="/">Accueil</a></li>
+                    <li class="navbar__link two"><a class="navbar_a" href="/membership">Adhésion</a></li>
+                    <li class="navbar__link three"><a class="navbar_a" href="/donation">Donation</a></li>
+                    <li class="navbar__link three"><a class="navbar_a" href="/donation">Evènement</a></li>
+                </ul>
+
+                <button class="burger">
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
     <div class="home">
 
         <div class="homeHome">
@@ -29,14 +49,13 @@
             <img src="./img/chambord.jpg" alt="chambord" class="membership_img" />
             <div class="membership_sb" />
             <a href="/membership" class="membership_button">Choix de votre adhésion<span /></a>
-
-            <hr class="membership_line" />
         </div>
 
-        <div> 
+        <div class="donation">
+            <hr class="donation_line" />
             <h2 class="donation_subtitle">Donation</h2>
         </div>
-        <div class="donation">
+        <div class="donation_img">
             <div class="donation_background">
                 <a href="/donation" class="donation_button">Merci pour votre don<span /></a>
             </div>

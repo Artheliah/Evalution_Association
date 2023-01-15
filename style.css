@@ -47,26 +47,26 @@
 
 }
 
-.membership {
-
+.membership, .donation {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 30px;
 }
 
-.membership_subtitle {
+.membership_subtitle, .donation_subtitle  {
   font-size: 5em;
   color: #666666;
   text-shadow: 8px 4px 8px #666666a6;
   font-family: 'Aref Raruqaa', serif;
   font-weight: 500;
   text-align: center;
-  margin-top: .5em;
+  margin: .5em;
 }
 
 .membership_line {
   margin-top: 4em;
-  width: 4%;
+  width: 6%;
   background-color: #B98F46;
   border: 1.5px solid #B98F46;
 }
@@ -126,19 +126,17 @@
   right: 0;
 }
 
-.donation{
+.donation_img{
 background-image: url(./img/cathédrale.png);
 height: 400px;
 width: 100%;
 }
 
-.donation_subtitle {
-  font-size: 5em;
-  color: #666666;
-  text-shadow: 8px 4px 8px #666666a6;
-  font-family: 'Aref Ruqaa', serif;
-  font-weight: 500;
-  text-align: center;
+.donation_line {
+  margin-top: 4em;
+  width: 30%;
+  background-color: #B98F46;
+  border: 1.5px solid #B98F46;
 }
 
 .donation_button {
@@ -186,13 +184,13 @@ width: 100%;
   right: 0;
 }
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:100px) {
   .donation_background {
     height: 30vh;
   }
 
   .donation_button {
-    margin-top: 10vw;
+    margin-top: 16vw;
     margin-left: 3em;
     margin-right: 3em;
     padding: 10px 10px 20px;
