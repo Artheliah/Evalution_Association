@@ -9,10 +9,9 @@
 }
 
 .homeDescription {
-  display: flex;
   justify-content: center;
-  padding-top: 2%;
-  font-size: 30px;
+  padding-top: 5%;
+  font-size: 27px;
   color: white;
   padding-left: 15%;
   padding-right: 15%;
@@ -23,38 +22,23 @@
 .homeTitle {
   display: flex;
   justify-content: center;
-  padding-top: 1em;
+  padding-top: 2em;
   font-size: 6em;
   color: #F6BE5D;
   text-shadow: 5px 2px rgba(0, 0, 0, 0.541);
 }
 
 
-
-@media screen and (max-width:1300px) {
-  .homeHome {
-    height: 700px;
-  }
-
-  .homeTitle {
-    font-size: 10vw;
-  }
-
-  .homeDescription {
-    font-size: 30px;
-    padding-bottom: 1em;
-  }
-
-}
-
-.membership, .donation {
+.membership,
+.donation {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
 }
 
-.membership_subtitle, .donation_subtitle  {
+.membership_subtitle,
+.donation_subtitle {
   font-size: 5em;
   color: #666666;
   text-shadow: 8px 4px 8px #666666a6;
@@ -79,6 +63,7 @@
 }
 
 .membership_button {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   margin-top: 2em;
@@ -89,12 +74,13 @@
   border: 4px double #cccccc;
   color: #eeeeee;
   text-align: center;
-  font-size: 50px;
+  font-size: 45px;
   font-family: 'Aref Ruqaa', serif;
   transition: all 0.5s;
-  padding: 20px 15px 30px 15px;
+  padding: 20px 60px 30px 60px;
   cursor: pointer;
-  letter-spacing: .5rem;
+  letter-spacing: .15em;
+
 }
 
 .membership_button span {
@@ -126,10 +112,10 @@
   right: 0;
 }
 
-.donation_img{
-background-image: url(./img/cathédrale.png);
-height: 400px;
-width: 100%;
+.donation_img {
+  background-image: url(./img/cathédrale.png);
+  height: 400px;
+  width: 100%;
 }
 
 .donation_line {
@@ -140,23 +126,21 @@ width: 100%;
 }
 
 .donation_button {
-  background-color: #929496da;
-  background-position: 30% 10%;
-  border-radius: 20px;
-  border: 4px double #ffffff;
-  color: #ffffff;
-  font-size: 50px;
-  font-family: 'Aref Ruqaa', serif;
-  transition: all 0.5s;
-  padding: 20px 50px 20px 50px;
-  cursor: pointer;
-  letter-spacing: .3rem;
-  text-shadow: grey;
+  text-decoration: none;
   display: flex;
   justify-content: center;
-  margin-top: 8%;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin: 10% 20% 0px 20%;
+  background-color: #929496da;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Aref Ruqaa', serif;
+  transition: all 0.5s;
+  padding: 20px 60px 30px 60px;
+  cursor: pointer;
+  letter-spacing: .10em;
 }
 
 .donation_button span {
@@ -184,26 +168,28 @@ width: 100%;
   right: 0;
 }
 
-@media screen and (max-width:100px) {
-  .donation_background {
-    height: 30vh;
-  }
+@media screen and (max-width:1110px) {
 
   .donation_button {
-    margin-top: 16vw;
-    margin-left: 3em;
-    margin-right: 3em;
-    padding: 10px 10px 20px;
-    font-size: 5vw;
-    letter-spacing: .1rem;
+    font-size: 30px;
+    margin: 15% 20% 0% 20%;
+
   }
 
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:830px) {
   .donation_subtitle {
-    font-size: 10vw;
+    font-size: 40px;
   }
+
+  .donation_button {
+    margin-top: 50px;
+    font-size: 25px;
+    padding: 15px 45px 20px 45px;
+    margin: 20% 4% 10% 4%;
+  }
+
   .donation {
     height: 200px;
     background-position: 20% 10%;
@@ -211,65 +197,132 @@ width: 100%;
 }
 
 @media screen and (max-width:500px) {
-.donation {
-  background-position: 25% 10%;
-}
-}
-
-@media screen and (max-width:1200px) {
-
-  .membership_button {
-    margin-top: 2em;
-    margin-left: 3em;
-    margin-right: 3em;
-    border-radius: 10px;
-    font-size: 5vw;
-    letter-spacing: .2rem;
+  .donation_line{
+    margin-top: 20px;
   }
-
+  .donation_img {
+    height: 200px;
+    background-position: 25% 30%;
+  }
+.donation_subtitle{
+  margin: 20% 20% 0px 20%;
+  
 }
-
-@media screen and (max-width:700px) {
-  .membership_subtitle {
-    font-size: 10vw;
+  .donation_button {
+    margin: 20% 4% 0% 4%;
+    font-size: 17px;
   }
 }
-
-
-@media screen and (max-width:600px) {
-  .homeHome {
-    height: 400px;
-
-  }
-
-  .homeTitle {
-    padding-top: 70px;
-    font-size: 30px;
-  }
-
-  .homeDescription {
-    padding-top: 4%;
-    font-size: 15px;
-    padding-bottom: 1em;
-  }
-
-}
-
 
 @media screen and (max-width:300px) {
-  .homeHome {
-    height: 300px;
+  .donation_subtitle{
+    margin: auto;
   }
 
-  .homeTitle {
-    padding-top: 20px;
-    font-size: 20px;
+  .donation_button {
+    margin: 20% 4% 0% 4%;
+    font-size: 14px;
   }
-
-  .homeDescription {
-    padding-top: 4%;
-    font-size: 11px;
-    padding-bottom: 1em;
-  }
-
 }
+
+  @media screen and (max-width:1300px) {
+
+    .membership_line {
+      margin-top: 20px;
+
+    }
+
+    .membership_subtitle {
+      font-size: 40px;
+    }
+
+    .membership_img {
+      margin-top: 20px;
+      box-shadow: 0px 20px 20px grey;
+
+    }
+
+    .membership_button {
+      margin: 20% 1% 0% 1%;
+      font-size: 30px;
+      padding: 15px 45px 20px 45px;
+
+    }
+
+  }
+
+  @media screen and (max-width:550px) {
+
+    .membership_button {
+      font-size: 15px;
+      margin: 20% 1% 0% 1%;
+
+    }
+
+  }
+
+  @media screen and (max-width:1300px) {
+    .homeHome {
+      height: 700px;
+    }
+
+    .homeTitle {
+      padding-top: 15vw;
+      font-size: 9vw;
+    }
+
+    .homeDescription {
+      font-size: 20px;
+      padding-bottom: 1em;
+    }
+
+  }
+
+  @media screen and (max-width:800) {
+    .homeHome {
+      height: 400px;
+
+    }
+
+    .homeTitle {
+      font-size: 30px;
+    }
+
+    .homeDescription {
+      padding-top: 4%;
+      font-size: 15px;
+      padding-bottom: 1em;
+    }
+
+  }
+
+
+  @media screen and (max-width:550px) {
+    .homeHome {
+      height: 450px;
+    }
+
+    .homeTitle {
+      padding-top: 3.5em;
+      font-size: 30px;
+    }
+
+    .homeDescription {
+      padding-top: 4%;
+      font-size: 15px;
+      padding-bottom: 1em;
+    }
+
+  }
+
+  @media screen and (max-width:300px) {
+    .homeHome {
+      height: 350px;
+    }
+
+    .homeDescription {
+      font-size: 12px;
+      padding-bottom: 1em;
+    }
+
+  }
