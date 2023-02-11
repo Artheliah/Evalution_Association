@@ -1,0 +1,92 @@
+.footer {
+    background-color: #2D1F1B;
+    color: rgba(255, 255, 255, 0.534);
+    font-family: 'Tajawal', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13%;
+    height: 200px;
+    line-height: 2.5;
+}
+
+.footer_logo {
+    margin-bottom: 2em;
+    padding-right: 5em;
+}
+
+.contact_subtitle,
+.privacy_subtitle {
+
+    text-decoration: underline;
+
+}
+
+.mail {
+    color: #bebebe9f;
+}
+
+.footer_copyright {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.63);
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .footer {
+        display: flex;
+        gap: 3%;
+        font-size: 15px;
+        padding-right: 8em;
+        padding-left: 6em;
+        line-height: 1.5em;
+    }
+
+    .footer_privacy {
+        padding: 0% 4% 0% 6%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 3%;
+        font-size: 15px;
+        padding-right: 6em;
+        padding-left: 5em;
+        height: 20vh;
+        line-height: 1.5;
+    }
+
+    .footer_image {
+        width: 50%;
+    }
+
+    .footer_contact {
+        padding-top: 1em;
+        padding-left: 1em;
+    }
+
+    .footer_copyright {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        height: 20em;
+    }
+
+}
