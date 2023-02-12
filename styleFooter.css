@@ -1,34 +1,43 @@
 .footer {
-    background-color: #2D1F1B;
-    color: rgba(255, 255, 255, 0.534);
-    font-family: 'Tajawal', sans-serif;
+    background: linear-gradient(#2D1F1B, #0a0807);
+    color: rgb(85, 83, 83);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 13%;
     height: 200px;
     line-height: 2.5;
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 .footer_logo {
     margin-bottom: 2em;
+}
+
+.footer_description {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_subtitle {
+    font-weight: 200;
+}
+
+.footer_privacy {
     padding-right: 5em;
 }
 
-.contact_subtitle,
-.privacy_subtitle {
-
-    text-decoration: underline;
-
+.footer_image {
+    width: 70%;
 }
 
 .mail {
     color: #bebebe9f;
 }
 
-.footer_copyright {
+.copyright {
     background-color: black;
-    color: rgba(255, 255, 255, 0.63);
+    color: rgba(255, 255, 255, 0.418);
     text-align: center;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -40,31 +49,36 @@
 
     .footer {
         display: flex;
-        gap: 3%;
         font-size: 15px;
-        padding-right: 8em;
-        padding-left: 6em;
-        line-height: 1.5em;
+        padding-right: 3em;
+        padding-left: 2em;
+        height: 30vh;
+        line-height: 1.5;
+        gap: 9%;
     }
 
-    .footer_privacy {
-        padding: 0% 4% 0% 6%;
-    }
+
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
     .footer {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        gap: 3%;
+        gap: 4%;
         font-size: 15px;
         padding-right: 6em;
         padding-left: 5em;
-        height: 20vh;
-        line-height: 1.5;
+        height: 30vh;
+    }
+
+    .footer_description{
+        margin-bottom: 30px;
+    }
+
+    .footer_logo{
+        padding-left: 10px;
     }
 
     .footer_image {
@@ -87,6 +101,25 @@
         display: flex;
         justify-content: center;
         height: 20em;
+        font-size: small;
+    }
+    .copyright{
+        font-size: small;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .footer_description {
+       display: flex;
+       flex-direction: column;
+       font-size: smaller;
+    }
+
+    .contact_subtitle{
+        margin-top: 20px;
+        margin-bottom: 1em;
     }
 
 }

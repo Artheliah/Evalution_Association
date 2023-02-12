@@ -25,7 +25,8 @@
   padding-top: 2em;
   font-size: 6em;
   color: #F6BE5D;
-  text-shadow: 5px 2px rgba(0, 0, 0, 0.541);
+  font-weight: 200;
+  text-shadow: 3px 2px rgba(0, 0, 0, 0.541);
 }
 
 
@@ -52,7 +53,6 @@
   font-size: 5em;
   color: #666666;
   text-shadow: 8px 4px 8px #666666a6;
-  font-family: 'Aref Raruqaa', serif;
   font-weight: 500;
   text-align: center;
   margin: .5em;
@@ -71,7 +71,6 @@
   color: #dcdddf;
   text-align: center;
   font-size: 45px;
-  font-family: 'Aref Ruqaa', serif;
   transition: all 0.5s;
   padding: 20px 60px 30px 60px;
   cursor: pointer;
@@ -103,7 +102,11 @@
 }
 
 .membership_button:hover {
-  background-color: #27446b;
+  background-color: #1d3049b4;
+}
+
+.donation_button:hover {
+  background-color: #000000be;
 }
 
 .membership_button:hover span {
@@ -160,7 +163,7 @@
 }
 
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1415px) {
 
   .membership_img {
     margin-top: 20px;
@@ -189,34 +192,33 @@
 }
 
 
-@media screen and (max-width:800) {
-  .homeHome {
-    height: 400px;
-  }
+@media screen and (max-width:1000px) {
 
-  .homeTitle {
-    font-size: 30px;
-  }
-
-  .homeDescription {
-    padding-top: 4%;
-    font-size: 15px;
-    padding-bottom: 1em;
+  .donation_button, .membership_button {
+    font-size: 21px;
   }
 
   .donation_subtitle,
   .membership_subtitle {
     font-size: 50px;
+}
+
+.donation_img,
+.membership_img {
+  height: 400px;
   }
 
- 
-  .donation_img, .membership_img {
-    height: 200px;
-    background-position: 20% 10%;
+}
+
+@media screen and (max-width:770px) {
+  .donation_button, .membership_button {
+    padding: 2%;
+    margin: 30px;
+    font-size: 20px;
   }
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:500px) {
   
   .donation_line,
   .membership_line {
