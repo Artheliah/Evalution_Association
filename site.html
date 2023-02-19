@@ -5,63 +5,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href="styleMenu.css" rel="stylesheet">
     <link href="styleFooter.css" rel="stylesheet">
+    <link href="styleForm.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@200;300;400;500;600&display=swap"
         rel="stylesheet">
     <title>Les Héritiers</title>
 </head>
 
 <body>
-    <div class="menu">
-        <nav>
-            <div class="navbar" role="navigation">
+    <nav class="navbar">
 
-                <div>
-                    <img class="logo" src="./img/logo (3).png" alt="logo">
-                </div>
-                <ul class="links">
-                    <li class="link one"><a class="navbar_a" href="/">Accueil</a></li>
-                    <li class="link two"><a class="navbar_a" href="/membership">Adhésion</a></li>
-                    <li class="link three"><a class="navbar_a" href="/donation">Donation</a></li>
-                    <li class="link three"><a class="navbar_a" href="/donation">Evènement</a></li>
-                </ul>
+        <img class="logo" src="./img/logo (3).png" alt="logo">
 
-                <button class="burger">
-                    <span class="bar"></span>
-                </button>
+        <div class="nav">
+            <div class="menu-burger">
+                <hr />
+                <hr />
+                <hr />
             </div>
-        </nav>
-    </div>
+            <div class="main_pages">
+                <a href="" class="link">accueil</a>
+                <a href="" class="link">adhésion</a>
+                <a href="#" class="link">donation</a>
+                <a href="#" class="link">évènement</a>
+            </div>
+        </div>
+    </nav>
     <div class="home">
-
         <div class="homeHome">
             <h1 class="homeTitle">LES HERITIERS</h1>
-            <p class="homeDescription">
-                “Les Héritiers” est une association qui a pour but de défendre, cultiver et transmettre la culture
-                française. Nous souhaitons préserver le patrimoine culturel français pour les générations d’hier,
-                d’aujourd’hui et de demain. De par nos actions, nous espérons que l’initiative vous plaira et que cela
-                vous invitera à rejoindre notre grande et belle aventure.
-            </p>
-        </div>
+            <div class="blockHome">
 
+                <p class="homeDescription">
+                    “Les Héritiers” est une association qui a pour but de défendre, cultiver et transmettre la culture
+                    française. Nous souhaitons préserver le patrimoine culturel français pour les générations d’hier,
+                    d’aujourd’hui et de demain. De par nos actions, nous espérons que l’initiative vous plaira et que
+                    cela
+                    vous invitera à rejoindre notre grande et belle aventure.
+                </p>
+            </div>
+        </div>
 
         <div class="membership">
             <hr class="membership_line" />
             <h2 class="membership_subtitle">Adhésion</h2>
-            <div class="membership_img" />
-            <a href="/membership" class="membership_button">Choix de votre adhésion<span /></a>
+            <div class="blockMembership">
+                <ul class="description">
+                    <li>
+                        Votre adhésion vous permettra de participer à des évènements enrichissants mettant en avant
+                        notre belle France.
+                    </li>
+                    <br />
+                    <li>
+                        Si vous êtes curieux et souhaitez en apprendre davantage sur notre bel héritage je vous
+                        invite à nous rejoindre.
+                    </li>
+
+                </ul>
+                <div class="membership_img" />
+                <a href="/membership" class="membership_button">Choix de votre adhésion<span /></a>
+            </div>
         </div>
+
 
         <div class="donation">
             <hr class="donation_line" />
             <h2 class="donation_subtitle">Donation</h2>
         </div>
-        <div class="donation_img">
-            <a href="/donation" class="donation_button">Merci pour votre don<span /></a>
+        <div>
+            <div class="blockDonation">
+                <div class="donation_img">
+                    <a href="/donation" class="donation_button">Merci pour votre don<span /></a>
+                </div>
+                <ul class="description">
+                    <li>
+                        Votre don permettra à notre association de grandir et perdurer avec des projets toujours plus
+                        ambitieux.
+                    </li>
+                    <br />
+                    <li>
+                        Nous comptons sur votre soutien pour rendre possible des projets telles que la rénovation de
+                        calvaires, la mise en place d'une exposition sur l'histoire de france ou même la parution d'un
+                        journal.
+                    </li>
+
+                </ul>
+            </div>
+
+
         </div>
+
+        <div class="contactForm">
+            <h1 class="contactForm_title">CONTACT</h1>
+            <hr class="contactForm_line" />
+            <h2 class="contactForm_subtitle">Nous contacter</h2>
+            <form action="" method="get" class="contactForm_form">
+                <div class="contactForm_name">
+                    <input type="text" placeholder="Nom" class="contactForm_input_name" />
+                </div>
+                <div class="contactForm_fisrtName">
+                    <input type="text" placeholder="Prénom" class="contactForm_input_firstName" />
+                </div>
+                <div class="contactForm_mail">
+                    <input type="text" placeholder="E-mail" class="contactForm_input_mail" />
+                </div>
+                <div class="contactForm_message">
+                    <input type="text" placeholder="Message" class="contactForm_input_message" />
+                </div>
+                <div class="contactForm_submit">
+                    <input type="submit" name="" value="ENVOYER" class="contactForm_input_submit" />
+                </div>
+
+            </form>
+        </div>
+
     </div>
+
 
     <div class="footer">
 
@@ -98,6 +160,7 @@
     <div class="copyright">
         <p>Les Héritiers ©Copyright 2022 Tous droits reservés</p>
     </div>
+
 
 
 </body>
